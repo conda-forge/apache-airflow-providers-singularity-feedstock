@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-singularity" %}
-{% set version = "2.0.2" %}
+{% set version = "2.0.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://archive.apache.org/dist/airflow/providers/{{ name }}-{{ version }}.tar.gz
-  sha256: b62dc3aec0784eaf5dd7f71e73c62c01fea9ae4a6c9e093bfd37c722555b5280
+  sha256: dbd1a87e90a5c9b07e638caac63215f778095e649467c27db2e3846598c61368
 
 build:
   number: 0
