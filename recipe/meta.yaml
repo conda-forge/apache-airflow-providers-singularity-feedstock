@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-singularity" %}
-{% set version = "3.1.0" %}
+{% set version = "3.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-singularity-{{ version }}.tar.gz
-  sha256: 29c4766c7e2735eed8be6cb9336a83b34d7d9f6d85205909a3194e58a2a74ac8
+  sha256: 4925eca8f445be9185567c3e187663845594dbc1068c9a0be09efa77a1be47a7
 
 build:
   noarch: python
