@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-singularity" %}
-{% set version = "3.8.2" %}
+{% set version = "3.8.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 3bf45f0ffba66620a630003eab44047c7c707a15e1730c09d9b00b36b554480c
+  sha256: 7f054485b3af774b32cdd82d79a34cd5c2aad75c00a6fbffc9629b043d872a0b
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - flit-core ==3.12.0
     - pip
   run:
+    - apache-airflow-providers-common-compat >=1.8.0
     - python >={{ python_min }}
     - apache-airflow >=2.10.0
     - spython >=0.0.56
