@@ -29,7 +29,7 @@ requirements:
 tests:
   - python:
       imports:
-        - airflow.providers.singularity
+      - airflow.providers.singularity
       pip_check: true
       python_version: ${{ python_min }}.*
 
