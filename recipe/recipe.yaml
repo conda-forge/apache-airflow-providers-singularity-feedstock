@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-singularity
-  version: "3.9.4"
+  version: "3.9.5"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_singularity-${{ version }}.tar.gz
-  sha256: e98c9d38fb4c90e4a1330c9206d5c97dc60ec7170444fdbce17ff6a7a6118a41
+  sha256: 1273fc2a237d1f3127aec84b8d1dd0e76f9d42a26b5e2cff07982f9029061579
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - flit-core ==3.12.0
+    - flit-core ==4.1.0
   run:
     - python >=${{ python_min }}
     - apache-airflow >=2.11.0
